@@ -9,3 +9,49 @@
 </script>
 
 wrapped that code in a function wrapper and called it with name();
+
+export default u=>import(u)
+
+control + shift + left click will drag spaces in accuracy
+
+./meta.js means same directory
+without './' means forward folder
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "../build/three.module.js"
+				}
+			}
+		</script>
+
+		<script type="module">
+
+			import * as THREE from 'three';
+
+			import { PointerLockControls } from './jsm/controls/PointerLockControls.js';
+
+used import map as standard URI
+
+Going back in the directory tree 	
+
+../CSS/display
+
+In this case, we use the ../ writing convention — inherited from the UNIX file system world — to tell the browser we want to go up from one directory. Here we want to reach this URL: https://developer.mozilla.org/en-US/docs/Learn/../CSS/display, which can be simplified to: https://developer.mozilla.org/en-US/docs/CSS/display. 
+
+"imports": {
+					"three": "../build/three.module.js"
+				}
+../ list current directory
+
+	<script type="importmap">
+		{
+			"imports": {
+				"three": "./custom_nodes/three.js-dev/build/three.module.js"
+			}
+		}
+	</script>
+
+	<script type="module">
+
+		import * as THREE from 'three';
