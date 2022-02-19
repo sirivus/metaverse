@@ -2,3 +2,5 @@ git add .
 git commit -m asd
 git push
 
+only download and upload files, do not clone
+
